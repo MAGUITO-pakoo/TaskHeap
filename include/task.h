@@ -2,17 +2,16 @@
 #define TASK_H
 
 #include <string>
-using namespace std;
 
 class Task {
 private:
-    string description;
+    std::string description;
     int priorite;
 
 public:
-    Task(string desc, int prio);
+    Task(const std::string& desc, int prio);
     int getPriorite() const;
-    string getDescription() const;
+    std::string getDescription() const;
 };
 
 #endif

@@ -4,11 +4,10 @@
 #include <vector>
 #include "task.h"
 
-using namespace std;
-
 class TaskHeap {
 private:
-    vector<Task> heap;
+    std::vector<Task> heap;
+
     void heapifyUp(int index);
     void heapifyDown(int index);
 
@@ -17,6 +16,7 @@ public:
     Task extractMin();
     bool isEmpty() const;
     void displayTasks() const;
+    Task* searchTask(const std::string& description);
 };
 
 #endif

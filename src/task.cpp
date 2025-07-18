@@ -1,6 +1,6 @@
-#include "../include/task.h"
+#include "task.h"
 
-Task::Task(string desc, int prio) {
+Task::Task(const std::string& desc, int prio) {
     description = desc;
     priorite = prio;
 }
@@ -9,7 +9,7 @@ int Task::getPriorite() const {
     return priorite;
 }
 
-string Task::getDescription() const {
+std::string Task::getDescription() const {
     return description;
 }
 
